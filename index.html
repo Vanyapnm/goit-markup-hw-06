@@ -44,8 +44,10 @@
             <h1 class="hero-titel">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
 <div class="backdrop is-hidden" data-modal>
+
+        <!-- МОДАЛКА -->
 <div class="modal">
-<button class="btn-close" data-modal-close><svg class="model-close-icon" width="30px" height="30px"><use href="./images/symbol-defs.svg#close"></use> </svg></button>
+<button class="btn-close" data-modal-close><svg class="model-close-icon" width="18px" height="18px"><use href="./images/symbol-defs.svg#close"></use> </svg></button>
 <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 <form class="modal-form">
     <div class="form-group"></div>
@@ -125,7 +127,7 @@
                 <p class="about-text">Мобільні додатки</p></div>
                 </li>
                 <li class="item"><div class="about"><img src="./images/box3.jpg" alt="дизайнерські рішення" width="370">
-                <p class="about-text">Дизайнерські рішення</p></div>
+                    <p class="about-text">Дизайнерські рішення</p></div>
                 </li>
             </ul>
             </div>
@@ -327,11 +329,13 @@
         </div>
         <div class="footer-form-group">
             <span class="footer-label">Підпишіться на розсилку</span>
-        <label class="footer-field">
+        <form class="footer-form">
+            <label class="footer-field">
             <input class="footer-input" name="email" type="email" placeholder="E-mail"/>
-            <button class="footer-submit-btn" type="submit">
-                Підписатися</button>
         </label>
+        <button class="footer-submit-btn" type="submit">
+            Підписатися</button>
+        </form>
     </div>
     </div>
     </footer>

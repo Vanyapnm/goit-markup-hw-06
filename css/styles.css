@@ -242,6 +242,7 @@ header {
   opacity: 1;
   visibility: visible;
   transition: opacity var(--trinsit-time) var(--timing-functoin) ,visibility var(--trinsit-time) var(--timing-functoin);
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
@@ -259,12 +260,10 @@ min-width: 528px;
 min-height: 581px;
 background-color: var(--primary-whit-color);
 border-radius: 4px;
+padding: 40px;
 } 
 
-.modal-form {
-  padding-left: 41px;
-  padding-right: 39px;
-}
+
 
 .btn-close {
   position: absolute;
@@ -275,6 +274,8 @@ border-radius: 4px;
   top: 8px;
   right: 8px;
   padding: 0;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-whit-color);
@@ -295,14 +296,12 @@ border-radius: 4px;
 }
 
 .modal-title {
-  margin-top: 40px;
-  margin-bottom: 30px;
-
-  font-weight: 700;
+font-weight: 700;
 font-size: 20px;
 line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 12px;
 
 color: #212121;
 }
@@ -340,7 +339,9 @@ transition: border-color var(--trinsit-time) var(--timing-functoin) ,visibility 
   display: flex;
   text-align: center;
   align-items: center;
-  margin-top: 10px;
+  appearance: none;
+  gap:8px;
+  margin-bottom: 30px;
 }
 
 .form-label {
@@ -396,7 +397,6 @@ textarea:focus-visible {
   padding: 10px 52px;
   border-radius: 4px;
   border: 0;
-  margin-bottom: 40px;
  
   transition: background-color var(--trinsit-time) var(--timing-functoin);
 }
@@ -430,13 +430,6 @@ textarea:focus-visible {
     margin-bottom: 20px;
   }
 
-.form-checkbox {
-  display: flex;
-  /* justify-content:center; */
-  gap:8px;
-  margin-bottom: 30px;
-}
-
   .checkbox-titel {
     display: block;
     font-size: 14px;
@@ -457,6 +450,8 @@ color: var(--primary-text-color);
 .checkbox {
   appearance: none;
   position: absolute;
+
+  transition: background-image var(--trinsit-time) var(--timing-functoin);
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -464,6 +459,7 @@ color: var(--primary-text-color);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 
@@ -865,11 +861,14 @@ footer {
   margin-bottom: 9px;
 }
 
+.social-footer {
+  margin-right: 93px;
+}
+
 .social-footer-list {
   display:flex;
   gap: 10px;
   justify-content: center;
-  margin-right: 93px;
 }
 
 .social-footer-link {
@@ -903,9 +902,8 @@ footer {
   
 }
 
-.footer-field {
+.footer-form {
   display: flex;
-  
 }
 
 .footer-label {
